@@ -1,0 +1,28 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "personalBlog",
+    "description": "",
+    "home_page_url": "https://lauhnguyen.github.io/Blog",
+    "feed_url": "https://lauhnguyen.github.io/Blog/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Lầu Hoàng Nguyên"
+    },
+    "items": [
+        {
+            "id": "https://lauhnguyen.github.io/Blog/blog-ca-nhan/",
+            "url": "https://lauhnguyen.github.io/Blog/blog-ca-nhan/",
+            "title": "BLOG CÁ NHÂN",
+            "summary": "img[loading] { opacity: 1; } Trang Chủ Thông Tin Bài Viết Tags Collection of all 0 tags Table of ContentsTags",
+            "content_html": "<noscript>\n\t\t<style>\n\t\t\timg[loading] {\n\t\t\t\topacity: 1;\n\t\t\t}\n\t\t</style>\n\t</noscript><header class=\"top js-header\"><nav></nav><nav class=\"nav\"><a href=\"/tags/index.html\">Trang Chủ</a> <a href=\"/about.html\">Thông Tin</a> <a href=\"/posts.html\">Bài Viết</a></nav></header><main class=\"page page--tags\">\n<div class=\"hero hero--noimage\"><header class=\"hero__content\">\n<div class=\"wrapper\">\n<h1 id=\"mcetoc_1ig100k6b8\">Tags</h1>\n<p class=\"page__desc\">Collection of all 0 tags</p>\n</div>\n</header></div>\n<div class=\"wrapper\">\n<div class=\"center-button\"><a href=\"/tags/blog.html\">Chuyển Đến Blog</a></div>\n</div>\n</main><footer class=\"footer\">\n<div class=\"wrapper\"><button id=\"backToTop\" class=\"footer__bttop\" title=\"Back to top\" aria-label=\"Back to top\"> <svg width=\"20\" height=\"20\"> <use xlink:href=\"/assets/svg/svg-map.svg#toparrow\"> </use></svg> </button></div>\n</footer>\n<p>\n<script defer=\"defer\" src=\"/assets/js/scripts.min.js?v=700105c316933a8202041b6415abb233\"><div class=\"post__toc\"  data-mce-fragment=\"1\"><h3  data-mce-fragment=\"1\">Table of Contents</h3><ul data-mce-fragment=\"1\"><li data-mce-fragment=\"1\"><a href=\"#mcetoc_1ig100k6b8\" data-mce-href=\"#mcetoc_1ig100k6b8\" data-mce-fragment=\"1\">Tags</a><span id=\"mce_marker\" data-mce-type=\"bookmark\" data-mce-fragment=\"1\"></span></li></ul></div></script>\n<script>\n\t\twindow.publiiThemeMenuConfig = {\n\t\t\tmobileMenuMode: 'sidebar',\n\t\t\tanimationSpeed: 300,\n\t\t\tsubmenuWidth: 'auto',\n\t\t\tdoubleClickTime: 500,\n\t\t\tmobileMenuExpandableSubmenus: true,\n\t\t\trelatedContainerForOverlayMenuSelector: '.top'\n\t\t};\n\t\tvar images = document.querySelectorAll('img[loading]');\n\t\tfor (var i = 0; i < images.length; i++) {\n\t\t\tif (images[i].complete) {\n\t\t\t\timages[i].classList.add('is-loaded');\n\t\t\t} else {\n\t\t\t\timages[i].addEventListener('load', function() {\n\t\t\t\t\tthis.classList.add('is-loaded');\n\t\t\t\t}, false);\n\t\t\t}\n\t\t}\n\t</script>\n<script defer=\"defer\" src=\"/assets/js/svg-map.js?v=ff4392540fcf4c3d3f5e03806e112816\"></script>\n<script defer=\"defer\" src=\"/assets/js/svg-fix.js?v=9b7d020c55e2b4f77ab40c97f88f9ff4\"></script>\n</p>",
+            "image": "https://lauhnguyen.github.io/Blog/media/posts/1/sitepage.jpg",
+            "author": {
+                "name": "Lầu Hoàng Nguyên"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-12-26T15:06:16+07:00",
+            "date_modified": "2024-12-26T15:06:16+07:00"
+        }
+    ]
+}
