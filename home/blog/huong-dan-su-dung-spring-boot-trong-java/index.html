@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hướng dẫn sử dụng Spring Boot trong Java - Blog</title><meta name="description" content="1. Giới thiệu về Spring Boot Spring Boot là một framework mạnh mẽ giúp đơn giản hóa việc phát triển&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://lauhnguyen.github.io/Blog/home/blog/huong-dan-su-dung-spring-boot-trong-java/"><link rel="alternate" type="application/atom+xml" href="https://lauhnguyen.github.io/Blog/feed.xml"><link rel="alternate" type="application/json" href="https://lauhnguyen.github.io/Blog/feed.json"><meta property="og:title" content="Hướng dẫn sử dụng Spring Boot trong Java"><meta property="og:site_name" content="Blog"><meta property="og:description" content="1. Giới thiệu về Spring Boot Spring Boot là một framework mạnh mẽ giúp đơn giản hóa việc phát triển&hellip;"><meta property="og:url" content="https://lauhnguyen.github.io/Blog/huong-dan-su-dung-spring-boot-trong-java/"><meta property="og:type" content="article"><link rel="stylesheet" href="https://lauhnguyen.github.io/Blog/assets/css/style.css?v=74f838951fac6f2cfe001a386a288c7d"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://lauhnguyen.github.io/Blog/home/blog/huong-dan-su-dung-spring-boot-trong-java/"},"headline":"Hướng dẫn sử dụng Spring Boot trong Java","datePublished":"2024-12-26T23:15+07:00","dateModified":"2024-12-27T08:52+07:00","description":"1. Giới thiệu về Spring Boot Spring Boot là một framework mạnh mẽ giúp đơn giản hóa việc phát triển&hellip;","author":{"@type":"Person","name":"hoangnguyen","url":"https://lauhnguyen.github.io/Blog/authors/hoangnguyen/"},"publisher":{"@type":"Organization","name":"hoangnguyen"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="page-template lines"><div class="container lines lines--right"><header class="header"><a href="https://lauhnguyen.github.io/Blog/" class="logo">Blog</a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu">Menu</button><ul class="navbar__menu"><li><a href="https://lauhnguyen.github.io/Blog/" target="_blank">Trang chủ</a></li><li><a href="https://lauhnguyen.github.io/Blog/home/blog/" target="_self">Bài viết</a></li><li><a href="https://lauhnguyen.github.io/Blog/home/profile/" target="_self">Thông tin cá nhân</a></li></ul></nav></header><main class="main page"><article class="content"><header class="content__inner content__header"><h1 class="content__title">Hướng dẫn sử dụng Spring Boot trong Java</h1></header><div class="content__inner"><div class="content__entry"><main><article class="post-content"><h2> </h2><h3>1. Giới thiệu về Spring Boot</h3><p>Spring Boot là một framework mạnh mẽ giúp đơn giản hóa việc phát triển ứng dụng Spring. Nó cung cấp cấu hình mặc định cho các ứng dụng Spring, giúp giảm thời gian và công sức phát triển.</p><h3>2. Tạo một dự án Spring Boot</h3><p>Để bắt đầu, bạn có thể sử dụng Spring Initializr (https://start.spring.io/) hoặc IDE yêu thích của bạn để tạo một dự án Spring Boot mới.</p><h3>3. Cấu trúc dự án cơ bản</h3><pre><code>
+src
+├── main
+│   ├── java
+│   │   └── com
+│   │       └── example
+│   │           └── demo
+│   │               ├── DemoApplication.java
+│   │               ├── controller
+│   │               ├── model
+│   │               ├── repository
+│   │               └── service
+│   └── resources
+│       ├── application.properties
+│       ├── static
+│       └── templates
+└── test
+            </code></pre><h3>4. Tạo một REST API đơn giản</h3><p>Dưới đây là ví dụ về một controller đơn giản:</p><pre><code>
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloController {
+
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello, Spring Boot!";
+    }
+}
+            </code></pre><h3>5. Dependency Injection</h3><p>Spring Boot sử dụng Dependency Injection để quản lý các bean:</p><pre><code>
+@Service
+public class UserService {
+    private final UserRepository userRepository;
+
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    // Service methods
+}
+
+@RestController
+public class UserController {
+    private final UserService userService;
+
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
+
+    // Controller methods
+}
+            </code></pre><h3>6. Cấu hình ứng dụng</h3><p>Sử dụng file application.properties hoặc application.yml để cấu hình ứng dụng:</p><pre><code>
+# application.properties
+server.port=8080
+spring.datasource.url=jdbc:mysql://localhost:3306/mydb
+spring.datasource.username=root
+spring.datasource.password=password
+            </code></pre><h3>7. Spring Data JPA</h3><p>Spring Boot hỗ trợ tốt cho việc làm việc với cơ sở dữ liệu thông qua Spring Data JPA:</p><pre><code>
+@Entity
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+    private String email;
+
+    // Getters and setters
+}
+
+@Repository
+public interface UserRepository extends JpaRepository&lt;User, Long&gt; {
+    List findByName(String name);
+}
+            </code></pre><h3>8. Testing trong Spring Boot</h3><p>Spring Boot cung cấp nhiều tiện ích để viết unit test và integration test:</p><pre><code>
+@SpringBootTest
+class UserServiceTest {
+
+    @Autowired
+    private UserService userService;
+
+    @Test
+    void testCreateUser() {
+        User user = new User("John Doe", "john@example.com");
+        User savedUser = userService.createUser(user);
+        assertNotNull(savedUser.getId());
+        assertEquals("John Doe", savedUser.getName());
+    }
+}
+            </code></pre><h3>Kết luận</h3><p>Spring Boot là một công cụ mạnh mẽ giúp đơn giản hóa quá trình phát triển ứng dụng Java. Với cấu hình tự động và tích hợp sẵn nhiều module, Spring Boot cho phép các nhà phát triển tập trung vào logic kinh doanh thay vì lo lắng về cấu hình.</p></article></main><footer><p>© 2024 Blog Cá Nhân. Tất cả quyền được bảo lưu.</p></footer></div></div></article></main><footer class="footer"><div class="footer__left"><div class="footer__copy">© 2024 Blog Cá Nhân</div></div><button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top"><svg><use xlink:href="https://lauhnguyen.github.io/Blog/assets/svg/svg-map.svg#toparrow"/></svg></button></footer></div><script>window.publiiThemeMenuConfig = { mobileMenuMode: 'sidebar', animationSpeed: 300, submenuWidth: 'auto', doubleClickTime: 500, mobileMenuExpandableSubmenus: true, relatedContainerForOverlayMenuSelector: '.navbar', };</script><script defer="defer" src="https://lauhnguyen.github.io/Blog/assets/js/scripts.min.js?v=9c5ab7a87221183f149a42b3cceb7956"></script><script>function publiiDetectLoadedImages () {
+         var images = document.querySelectorAll('img[loading]:not(.is-loaded)');
+         for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+               images[i].classList.add('is-loaded');
+               images[i].parentNode.classList.remove('is-img-loading');
+            } else {
+               images[i].addEventListener('load', function () {
+                  this.classList.add('is-loaded');
+                  this.parentNode.classList.remove('is-img-loading');
+               }, false);
+            }
+         }
+      }
+      publiiDetectLoadedImages();</script></body></html>

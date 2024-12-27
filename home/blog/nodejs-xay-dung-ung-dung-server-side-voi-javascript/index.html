@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Node.js: Xây dựng ứng dụng server-side với JavaScript - Blog</title><meta name="description" content="1. Giới thiệu về Node.js Node.js là một môi trường runtime JavaScript được xây dựng trên Chrome's V8 JavaScript engine."><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://lauhnguyen.github.io/Blog/home/blog/nodejs-xay-dung-ung-dung-server-side-voi-javascript/"><link rel="alternate" type="application/atom+xml" href="https://lauhnguyen.github.io/Blog/feed.xml"><link rel="alternate" type="application/json" href="https://lauhnguyen.github.io/Blog/feed.json"><meta property="og:title" content="Node.js: Xây dựng ứng dụng server-side với JavaScript"><meta property="og:site_name" content="Blog"><meta property="og:description" content="1. Giới thiệu về Node.js Node.js là một môi trường runtime JavaScript được xây dựng trên Chrome's V8 JavaScript engine."><meta property="og:url" content="https://lauhnguyen.github.io/Blog/nodejs-xay-dung-ung-dung-server-side-voi-javascript/"><meta property="og:type" content="article"><link rel="stylesheet" href="https://lauhnguyen.github.io/Blog/assets/css/style.css?v=74f838951fac6f2cfe001a386a288c7d"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://lauhnguyen.github.io/Blog/home/blog/nodejs-xay-dung-ung-dung-server-side-voi-javascript/"},"headline":"Node.js: Xây dựng ứng dụng server-side với JavaScript","datePublished":"2024-12-26T23:14+07:00","dateModified":"2024-12-27T08:56+07:00","description":"1. Giới thiệu về Node.js Node.js là một môi trường runtime JavaScript được xây dựng trên Chrome's V8 JavaScript engine.","author":{"@type":"Person","name":"hoangnguyen","url":"https://lauhnguyen.github.io/Blog/authors/hoangnguyen/"},"publisher":{"@type":"Organization","name":"hoangnguyen"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="page-template lines"><div class="container lines lines--right"><header class="header"><a href="https://lauhnguyen.github.io/Blog/" class="logo">Blog</a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu">Menu</button><ul class="navbar__menu"><li><a href="https://lauhnguyen.github.io/Blog/" target="_blank">Trang chủ</a></li><li><a href="https://lauhnguyen.github.io/Blog/home/blog/" target="_self">Bài viết</a></li><li><a href="https://lauhnguyen.github.io/Blog/home/profile/" target="_self">Thông tin cá nhân</a></li></ul></nav></header><main class="main page"><article class="content"><header class="content__inner content__header"><h1 class="content__title">Node.js: Xây dựng ứng dụng server-side với JavaScript</h1></header><div class="content__inner"><div class="content__entry"><main><article class="post-content"><h2> </h2><h3>1. Giới thiệu về Node.js</h3><p>Node.js là một môi trường runtime JavaScript được xây dựng trên Chrome's V8 JavaScript engine. Nó cho phép bạn chạy JavaScript ở phía server, mở ra khả năng xây dựng ứng dụng web full-stack chỉ với JavaScript.</p><h3>2. Cài đặt Node.js</h3><p>Truy cập <a href="https://nodejs.org">nodejs.org</a> và tải phiên bản phù hợp với hệ điều hành của bạn. Sau khi cài đặt, kiểm tra bằng lệnh:</p><pre><code>
+node --version
+npm --version
+            </code></pre><h3>3. Tạo một ứng dụng Node.js đơn giản</h3><p>Tạo file app.js với nội dung sau:</p><pre><code>
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) =&gt; {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World\n');
+});
+
+server.listen(port, hostname, () =&gt; {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+            </code></pre><p>Chạy ứng dụng bằng lệnh: <code>node app.js</code></p><h3>4. NPM (Node Package Manager)</h3><p>NPM là công cụ quản lý package cho Node.js. Để khởi tạo một dự án mới:</p><pre><code>
+npm init -y
+            </code></pre><p>Để cài đặt package:</p><pre><code>
+npm install express
+            </code></pre><h3>5. Express.js Framework</h3><p>Express là một web application framework phổ biến cho Node.js:</p><pre><code>
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) =&gt; {
+  res.send('Hello World!');
+});
+
+app.listen(port, () =&gt; {
+  console.log(`Example app listening at http://localhost:${port}`);
+});
+            </code></pre><h3>6. Routing trong Express</h3><p>Express cho phép định nghĩa các route một cách dễ dàng:</p><pre><code>
+app.get('/about', (req, res) =&gt; {
+  res.send('About page');
+});
+
+app.post('/api/users', (req, res) =&gt; {
+  // Xử lý tạo user mới
+  res.json({ message: 'User created' });
+});
+            </code></pre><h3>7. Middleware</h3><p>Middleware là các hàm có quyền truy cập vào object request, object response, và hàm next trong chu trình request-response của ứng dụng:</p><pre><code>
+app.use((req, res, next) =&gt; {
+  console.log('Time:', Date.now());
+  next();
+});
+            </code></pre><h3>8. Kết nối với Database</h3><p>Node.js có thể kết nối với nhiều loại database. Ví dụ với MongoDB sử dụng Mongoose:</p><pre><code>
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/myapp', {useNewUrlParser: true, useUnifiedTopology: true});
+
+const Cat = mongoose.model('Cat', { name: String });
+
+const kitty = new Cat({ name: 'Zildjian' });
+kitty.save().then(() =&gt; console.log('meow'));
+            </code></pre><h3>9. Asynchronous Programming</h3><p>Node.js sử dụng mô hình non-blocking I/O, cho phép xử lý bất đồng bộ hiệu quả:</p><pre><code>
+const fs = require('fs');
+
+fs.readFile('file.txt', 'utf8', (err, data) =&gt; {
+  if (err) throw err;
+  console.log(data);
+});
+
+// Hoặc sử dụng Promises
+const fsPromises = require('fs').promises;
+
+async function readFile() {
+  try {
+    const data = await fsPromises.readFile('file.txt', 'utf8');
+    console.log(data);
+  } catch (err) {
+    console.error('Error reading file:', err);
+  }
+}
+
+readFile();
+            </code></pre><h3>10. Deployment</h3><p>Node.js applications có thể được triển khai trên nhiều nền tảng như Heroku, DigitalOcean, AWS, etc. Ví dụ với Heroku:</p><pre><code>
+// Trong package.json
+"scripts": {
+  "start": "node app.js"
+}
+
+// Procfile
+web: npm start
+            </code></pre><h3>Kết luận</h3><p>Node.js mở ra một thế giới mới cho việc phát triển ứng dụng server-side bằng JavaScript. Với hiệu suất cao, hệ sinh thái package phong phú, và khả năng xử lý bất đồng bộ mạnh mẽ, Node.js là một lựa chọn tuyệt vời cho việc xây dựng các ứng dụng web hiện đại và có khả năng mở rộng.</p></article></main><footer><p>© 2024 Blog Cá Nhân. Tất cả quyền được bảo lưu.</p></footer></div></div></article></main><footer class="footer"><div class="footer__left"><div class="footer__copy">© 2024 Blog Cá Nhân</div></div><button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top"><svg><use xlink:href="https://lauhnguyen.github.io/Blog/assets/svg/svg-map.svg#toparrow"/></svg></button></footer></div><script>window.publiiThemeMenuConfig = { mobileMenuMode: 'sidebar', animationSpeed: 300, submenuWidth: 'auto', doubleClickTime: 500, mobileMenuExpandableSubmenus: true, relatedContainerForOverlayMenuSelector: '.navbar', };</script><script defer="defer" src="https://lauhnguyen.github.io/Blog/assets/js/scripts.min.js?v=9c5ab7a87221183f149a42b3cceb7956"></script><script>function publiiDetectLoadedImages () {
+         var images = document.querySelectorAll('img[loading]:not(.is-loaded)');
+         for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+               images[i].classList.add('is-loaded');
+               images[i].parentNode.classList.remove('is-img-loading');
+            } else {
+               images[i].addEventListener('load', function () {
+                  this.classList.add('is-loaded');
+                  this.parentNode.classList.remove('is-img-loading');
+               }, false);
+            }
+         }
+      }
+      publiiDetectLoadedImages();</script></body></html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lập trình đa luồng trong Java - Blog</title><meta name="description" content="1. Giới thiệu về đa luồng Đa luồng là khả năng một chương trình thực hiện nhiều tác vụ cùng&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://lauhnguyen.github.io/Blog/home/blog/lap-trinh-da-luong-trong-java/"><link rel="alternate" type="application/atom+xml" href="https://lauhnguyen.github.io/Blog/feed.xml"><link rel="alternate" type="application/json" href="https://lauhnguyen.github.io/Blog/feed.json"><meta property="og:title" content="Lập trình đa luồng trong Java"><meta property="og:site_name" content="Blog"><meta property="og:description" content="1. Giới thiệu về đa luồng Đa luồng là khả năng một chương trình thực hiện nhiều tác vụ cùng&hellip;"><meta property="og:url" content="https://lauhnguyen.github.io/Blog/lap-trinh-da-luong-trong-java/"><meta property="og:type" content="article"><link rel="stylesheet" href="https://lauhnguyen.github.io/Blog/assets/css/style.css?v=74f838951fac6f2cfe001a386a288c7d"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://lauhnguyen.github.io/Blog/home/blog/lap-trinh-da-luong-trong-java/"},"headline":"Lập trình đa luồng trong Java","datePublished":"2024-12-26T23:15+07:00","dateModified":"2024-12-27T08:52+07:00","description":"1. Giới thiệu về đa luồng Đa luồng là khả năng một chương trình thực hiện nhiều tác vụ cùng&hellip;","author":{"@type":"Person","name":"hoangnguyen","url":"https://lauhnguyen.github.io/Blog/authors/hoangnguyen/"},"publisher":{"@type":"Organization","name":"hoangnguyen"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="page-template lines"><div class="container lines lines--right"><header class="header"><a href="https://lauhnguyen.github.io/Blog/" class="logo">Blog</a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu">Menu</button><ul class="navbar__menu"><li><a href="https://lauhnguyen.github.io/Blog/" target="_blank">Trang chủ</a></li><li><a href="https://lauhnguyen.github.io/Blog/home/blog/" target="_self">Bài viết</a></li><li><a href="https://lauhnguyen.github.io/Blog/home/profile/" target="_self">Thông tin cá nhân</a></li></ul></nav></header><main class="main page"><article class="content"><header class="content__inner content__header"><h1 class="content__title">Lập trình đa luồng trong Java</h1></header><div class="content__inner"><div class="content__entry"><article class="post-content"><h2> </h2><h3>1. Giới thiệu về đa luồng</h3><p>Đa luồng là khả năng một chương trình thực hiện nhiều tác vụ cùng một lúc. Trong Java, đa luồng cho phép tối ưu hóa hiệu suất và tận dụng tốt hơn tài nguyên hệ thống.</p><h3>2. Tạo và chạy một Thread</h3><p>Có hai cách chính để tạo thread trong Java:</p><h4>a. Kế thừa từ lớp Thread</h4><pre><code>
+public class MyThread extends Thread {
+    public void run() {
+        System.out.println("Thread đang chạy");
+    }
+}
+
+// Sử dụng
+MyThread thread = new MyThread();
+thread.start();
+            </code></pre><h4>b. Implement interface Runnable</h4><pre><code>
+public class MyRunnable implements Runnable {
+    public void run() {
+        System.out.println("Thread đang chạy");
+    }
+}
+
+// Sử dụng
+Thread thread = new Thread(new MyRunnable());
+thread.start();
+            </code></pre><h3>3. Synchronization</h3><p>Synchronization giúp đảm bảo rằng chỉ một thread có thể truy cập vào một phần code tại một thời điểm:</p><pre><code>
+public synchronized void synchronizedMethod() {
+    // Code được đồng bộ hóa
+}
+
+// Hoặc
+public void method() {
+    synchronized(this) {
+        // Khối code được đồng bộ hóa
+    }
+}
+            </code></pre><h3>4. Thread States</h3><p>Một thread trong Java có thể ở một trong các trạng thái sau:</p><ul><li>New</li><li>Runnable</li><li>Blocked</li><li>Waiting</li><li>Timed Waiting</li><li>Terminated</li></ul><h3>5. Thread Pool</h3><p>Thread Pool là một kỹ thuật quản lý thread hiệu quả:</p><pre><code>
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+ExecutorService executor = Executors.newFixedThreadPool(5);
+for (int i = 0; i &lt; 10; i++) {
+    Runnable worker = new WorkerThread("" + i);
+    executor.execute(worker);
+}
+executor.shutdown();
+            </code></pre><h3>6. Deadlock</h3><p>Deadlock xảy ra khi hai hoặc nhiều thread chờ đợi lẫn nhau vô hạn. Ví dụ:</p><pre><code>
+public class DeadlockExample {
+    public static void main(String[] args) {
+        final String resource1 = "resource1";
+        final String resource2 = "resource2";
+        
+        Thread t1 = new Thread(() -&gt; {
+            synchronized (resource1) {
+                System.out.println("Thread 1: locked resource 1");
+                try { Thread.sleep(100);} catch (Exception e) {}
+                synchronized (resource2) {
+                    System.out.println("Thread 1: locked resource 2");
+                }
+            }
+        });
+        
+        Thread t2 = new Thread(() -&gt; {
+            synchronized (resource2) {
+                System.out.println("Thread 2: locked resource 2");
+                try { Thread.sleep(100);} catch (Exception e) {}
+                synchronized (resource1) {
+                    System.out.println("Thread 2: locked resource 1");
+                }
+            }
+        });
+        
+        t1.start();
+        t2.start();
+    }
+}
+            </code></pre><h3>7. Concurrent Collections</h3><p>Java cung cấp các collection thread-safe như ConcurrentHashMap, CopyOnWriteArrayList:</p><pre><code>
+import java.util.concurrent.ConcurrentHashMap;
+
+ConcurrentHashMap&lt;String, Integer&gt; map = new ConcurrentHashMap&lt;&gt;();
+map.put("key", 1);
+Integer value = map.get("key");
+            </code></pre><h3>Kết luận</h3><p>Lập trình đa luồng trong Java là một kỹ năng quan trọng giúp tối ưu hóa hiệu suất ứng dụng. Tuy nhiên, nó cũng đi kèm với những thách thức như deadlock và race condition. Việc hiểu và áp dụng đúng các kỹ thuật đa luồng sẽ giúp bạn phát triển các ứng dụng Java mạnh mẽ và hiệu quả hơn.</p></article><footer><p>© 2024 Blog Cá Nhân. Tất cả quyền được bảo lưu.</p></footer></div></div></article></main><footer class="footer"><div class="footer__left"><div class="footer__copy">© 2024 Blog Cá Nhân</div></div><button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top"><svg><use xlink:href="https://lauhnguyen.github.io/Blog/assets/svg/svg-map.svg#toparrow"/></svg></button></footer></div><script>window.publiiThemeMenuConfig = { mobileMenuMode: 'sidebar', animationSpeed: 300, submenuWidth: 'auto', doubleClickTime: 500, mobileMenuExpandableSubmenus: true, relatedContainerForOverlayMenuSelector: '.navbar', };</script><script defer="defer" src="https://lauhnguyen.github.io/Blog/assets/js/scripts.min.js?v=9c5ab7a87221183f149a42b3cceb7956"></script><script>function publiiDetectLoadedImages () {
+         var images = document.querySelectorAll('img[loading]:not(.is-loaded)');
+         for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+               images[i].classList.add('is-loaded');
+               images[i].parentNode.classList.remove('is-img-loading');
+            } else {
+               images[i].addEventListener('load', function () {
+                  this.classList.add('is-loaded');
+                  this.parentNode.classList.remove('is-img-loading');
+               }, false);
+            }
+         }
+      }
+      publiiDetectLoadedImages();</script></body></html>
