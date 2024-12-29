@@ -3,10 +3,1110 @@
     <title>Blog</title>
     <link href="https://lauhnguyen.github.io/Blog/feed.xml" rel="self" />
     <link href="https://lauhnguyen.github.io/Blog" />
-    <updated>1970-01-01T08:00:00+08:00</updated>
+    <updated>2024-12-29T10:04:33+07:00</updated>
     <author>
         <name>hoangnguyen</name>
     </author>
     <id>https://lauhnguyen.github.io/Blog</id>
 
+    <entry>
+        <title>JavaScript: Ngôn ngữ lập trình của web hiện đại</title>
+        <author>
+            <name>hoangnguyen</name>
+        </author>
+        <link href="https://lauhnguyen.github.io/Blog/javascript-ngon-ngu-lap-trinh-cua-web-hien-dai.html"/>
+        <id>https://lauhnguyen.github.io/Blog/javascript-ngon-ngu-lap-trinh-cua-web-hien-dai.html</id>
+        <media:content url="https://lauhnguyen.github.io/Blog/media/posts/12/feature.jpg" medium="image" />
+            <category term="Bài Viết"/>
+
+        <updated>2024-12-26T23:15:05+07:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://lauhnguyen.github.io/Blog/media/posts/12/feature.jpg" alt="" />
+                    1. Giới thiệu về JavaScript JavaScript là ngôn ngữ lập trình phổ biến nhất trong phát triển web. Ban đầu&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://lauhnguyen.github.io/Blog/media/posts/12/feature.jpg" class="type:primaryImage" alt="" /></p>
+                <main>
+<article class="post-content">
+<h2> </h2>
+<h3>1. Giới thiệu về JavaScript</h3>
+<p>JavaScript là ngôn ngữ lập trình phổ biến nhất trong phát triển web. Ban đầu được tạo ra để làm cho các trang web trở nên tương tác hơn, ngày nay JavaScript đã phát triển thành một ngôn ngữ đa năng có thể được sử dụng ở cả client-side và server-side.</p>
+<h3>2. Các tính năng cơ bản của JavaScript hiện đại</h3>
+<pre><code>
+// Variables và Constants
+let name = "JavaScript";
+const version = "ES6+";
+
+// Arrow Functions
+const sum = (a, b) =&gt; a + b;
+
+// Template Literals
+const greeting = `Hello ${name}!`;
+
+// Destructuring
+const {firstName, lastName} = person;
+const [first, ...rest] = array;
+            </code></pre>
+<h3>3. DOM Manipulation</h3>
+<p>JavaScript cho phép thao tác với DOM (Document Object Model) một cách dễ dàng:</p>
+<pre><code>
+// Selecting elements
+const element = document.querySelector('.my-class');
+
+// Event handling
+element.addEventListener('click', () =&gt; {
+    console.log('Element clicked!');
+});
+
+// Modifying content
+element.innerHTML = 'New content';
+            </code></pre>
+<h3>4. Asynchronous Programming</h3>
+<p>JavaScript hỗ trợ lập trình bất đồng bộ thông qua:</p>
+<ul>
+<li>Promises</li>
+<li>Async/Await</li>
+<li>Callbacks</li>
+</ul>
+<pre><code>
+// Using async/await
+async function fetchData() {
+    try {
+        const response = await fetch('api/data');
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+            </code></pre>
+<h3>5. Modern JavaScript Frameworks</h3>
+<p>Các framework JavaScript phổ biến:</p>
+<ul>
+<li>React</li>
+<li>Vue.js</li>
+<li>Angular</li>
+<li>Svelte</li>
+</ul>
+<h3>6. JavaScript trong phát triển Full-stack</h3>
+<p>Với Node.js, JavaScript có thể được sử dụng để phát triển:</p>
+<ul>
+<li>RESTful APIs</li>
+<li>Real-time applications</li>
+<li>Microservices</li>
+<li>Command-line tools</li>
+</ul>
+<h3>Kết luận</h3>
+<p>JavaScript đã phát triển từ một ngôn ngữ script đơn giản thành một công cụ mạnh mẽ cho phát triển web hiện đại. Với sự phát triển liên tục của các framework và công cụ mới, JavaScript tiếp tục là một kỹ năng quan trọng cho các nhà phát triển web.</p>
+</article>
+</main>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>So sánh Java và JavaScript: Điểm giống và khác nhau</title>
+        <author>
+            <name>hoangnguyen</name>
+        </author>
+        <link href="https://lauhnguyen.github.io/Blog/so-sanh-java-va-javascript-diem-giong-va-khac-nhau.html"/>
+        <id>https://lauhnguyen.github.io/Blog/so-sanh-java-va-javascript-diem-giong-va-khac-nhau.html</id>
+        <media:content url="https://lauhnguyen.github.io/Blog/media/posts/11/feature.jpg" medium="image" />
+            <category term="Bài Viết"/>
+
+        <updated>2024-12-26T23:15:00+07:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://lauhnguyen.github.io/Blog/media/posts/11/feature.jpg" alt="" />
+                    So sánh Java và JavaScript: Điểm giống và khác nhau 1. Nguồn gốc và Mục đích Đặc điểm Java JavaScript&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://lauhnguyen.github.io/Blog/media/posts/11/feature.jpg" class="type:primaryImage" alt="" /></p>
+                <main>
+<article class="post-content">
+<h2>So sánh Java và JavaScript: Điểm giống và khác nhau</h2>
+<h3>1. Nguồn gốc và Mục đích</h3>
+<table style="width: 100%; margin: 20px 0;" border="1">
+<tbody>
+<tr>
+<th>Đặc điểm</th>
+<th>Java</th>
+<th>JavaScript</th>
+</tr>
+<tr>
+<td>Năm ra đời</td>
+<td>1995</td>
+<td>1995</td>
+</tr>
+<tr>
+<td>Người tạo</td>
+<td>James Gosling (Sun Microsystems)</td>
+<td>Brendan Eich (Netscape)</td>
+</tr>
+<tr>
+<td>Mục đích chính</td>
+<td>Phát triển ứng dụng đa nền tảng</td>
+<td>Tạo tương tác cho trang web</td>
+</tr>
+</tbody>
+</table>
+<h3>2. Điểm giống nhau</h3>
+<ul>
+<li>Cú pháp dựa trên C/C++</li>
+<li>Hỗ trợ lập trình hướng đối tượng</li>
+<li>Có thư viện chuẩn phong phú</li>
+<li>Cộng đồng lớn và nhiều tài liệu</li>
+</ul>
+<h3>3. Điểm khác nhau chính</h3>
+<h4>Kiểu dữ liệu và Biến</h4>
+<pre><code>
+// Java - Strongly typed
+int number = 42;
+String text = "Hello";
+
+// JavaScript - Dynamically typed
+let number = 42;
+number = "Hello"; // Perfectly valid
+            </code></pre>
+<h4>Thực thi code</h4>
+<p>Java:</p>
+<ul>
+<li>Biên dịch thành bytecode</li>
+<li>Chạy trên JVM</li>
+<li>Cần biên dịch trước khi chạy</li>
+</ul>
+<p>JavaScript:</p>
+<ul>
+<li>Thông dịch trực tiếp</li>
+<li>Chạy trong trình duyệt hoặc Node.js</li>
+<li>Không cần biên dịch trước</li>
+</ul>
+<h3>4. Ứng dụng phổ biến</h3>
+<h4>Java:</h4>
+<ul>
+<li>Ứng dụng Enterprise</li>
+<li>Ứng dụng Android</li>
+<li>Hệ thống phân tán</li>
+<li>Ứng dụng desktop</li>
+</ul>
+<h4>JavaScript:</h4>
+<ul>
+<li>Phát triển web frontend</li>
+<li>Ứng dụng Node.js backend</li>
+<li>Progressive Web Apps</li>
+<li>Browser extensions</li>
+</ul>
+<h3>Kết luận</h3>
+<p>Mặc dù có tên gọi tương tự, Java và JavaScript là hai ngôn ngữ hoàn toàn khác nhau với những ưu điểm và use case riêng. Việc hiểu rõ điểm mạnh của mỗi ngôn ngữ sẽ giúp lập trình viên chọn công cụ phù hợp cho dự án của mình.</p>
+</article>
+</main>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Hướng dẫn sử dụng Spring Boot trong Java</title>
+        <author>
+            <name>hoangnguyen</name>
+        </author>
+        <link href="https://lauhnguyen.github.io/Blog/huong-dan-su-dung-spring-boot-trong-java.html"/>
+        <id>https://lauhnguyen.github.io/Blog/huong-dan-su-dung-spring-boot-trong-java.html</id>
+        <media:content url="https://lauhnguyen.github.io/Blog/media/posts/10/feature.jpg" medium="image" />
+            <category term="Bài Viết"/>
+
+        <updated>2024-12-26T23:15:00+07:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://lauhnguyen.github.io/Blog/media/posts/10/feature.jpg" alt="" />
+                    1. Giới thiệu về Spring Boot Spring Boot là một framework mạnh mẽ giúp đơn giản hóa việc phát triển&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://lauhnguyen.github.io/Blog/media/posts/10/feature.jpg" class="type:primaryImage" alt="" /></p>
+                <main>
+<article class="post-content">
+<h2> </h2>
+<h3>1. Giới thiệu về Spring Boot</h3>
+<p>Spring Boot là một framework mạnh mẽ giúp đơn giản hóa việc phát triển ứng dụng Spring. Nó cung cấp cấu hình mặc định cho các ứng dụng Spring, giúp giảm thời gian và công sức phát triển.</p>
+<h3>2. Tạo một dự án Spring Boot</h3>
+<p>Để bắt đầu, bạn có thể sử dụng Spring Initializr (https://start.spring.io/) hoặc IDE yêu thích của bạn để tạo một dự án Spring Boot mới.</p>
+<h3>3. Cấu trúc dự án cơ bản</h3>
+<pre><code>
+src
+├── main
+│   ├── java
+│   │   └── com
+│   │       └── example
+│   │           └── demo
+│   │               ├── DemoApplication.java
+│   │               ├── controller
+│   │               ├── model
+│   │               ├── repository
+│   │               └── service
+│   └── resources
+│       ├── application.properties
+│       ├── static
+│       └── templates
+└── test
+            </code></pre>
+<h3>4. Tạo một REST API đơn giản</h3>
+<p>Dưới đây là ví dụ về một controller đơn giản:</p>
+<pre><code>
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloController {
+
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello, Spring Boot!";
+    }
+}
+            </code></pre>
+<h3>5. Dependency Injection</h3>
+<p>Spring Boot sử dụng Dependency Injection để quản lý các bean:</p>
+<pre><code>
+@Service
+public class UserService {
+    private final UserRepository userRepository;
+
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    // Service methods
+}
+
+@RestController
+public class UserController {
+    private final UserService userService;
+
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
+
+    // Controller methods
+}
+            </code></pre>
+<h3>6. Cấu hình ứng dụng</h3>
+<p>Sử dụng file application.properties hoặc application.yml để cấu hình ứng dụng:</p>
+<pre><code>
+# application.properties
+server.port=8080
+spring.datasource.url=jdbc:mysql://localhost:3306/mydb
+spring.datasource.username=root
+spring.datasource.password=password
+            </code></pre>
+<h3>7. Spring Data JPA</h3>
+<p>Spring Boot hỗ trợ tốt cho việc làm việc với cơ sở dữ liệu thông qua Spring Data JPA:</p>
+<pre><code>
+@Entity
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+    private String email;
+
+    // Getters and setters
+}
+
+@Repository
+public interface UserRepository extends JpaRepository&lt;User, Long&gt; {
+    List findByName(String name);
+}
+            </code></pre>
+<h3>8. Testing trong Spring Boot</h3>
+<p>Spring Boot cung cấp nhiều tiện ích để viết unit test và integration test:</p>
+<pre><code>
+@SpringBootTest
+class UserServiceTest {
+
+    @Autowired
+    private UserService userService;
+
+    @Test
+    void testCreateUser() {
+        User user = new User("John Doe", "john@example.com");
+        User savedUser = userService.createUser(user);
+        assertNotNull(savedUser.getId());
+        assertEquals("John Doe", savedUser.getName());
+    }
+}
+            </code></pre>
+<h3>Kết luận</h3>
+<p>Spring Boot là một công cụ mạnh mẽ giúp đơn giản hóa quá trình phát triển ứng dụng Java. Với cấu hình tự động và tích hợp sẵn nhiều module, Spring Boot cho phép các nhà phát triển tập trung vào logic kinh doanh thay vì lo lắng về cấu hình.</p>
+</article>
+</main><footer>
+<p> </p>
+</footer>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>React.js: Xây dựng giao diện người dùng với JavaScript</title>
+        <author>
+            <name>hoangnguyen</name>
+        </author>
+        <link href="https://lauhnguyen.github.io/Blog/reactjs-xay-dung-giao-dien-nguoi-dung-voi-javascript.html"/>
+        <id>https://lauhnguyen.github.io/Blog/reactjs-xay-dung-giao-dien-nguoi-dung-voi-javascript.html</id>
+        <media:content url="https://lauhnguyen.github.io/Blog/media/posts/9/feature.jpg" medium="image" />
+            <category term="Bài Viết"/>
+
+        <updated>2024-12-26T23:15:00+07:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://lauhnguyen.github.io/Blog/media/posts/9/feature.jpg" alt="" />
+                    1. Giới thiệu về React React là một thư viện JavaScript mã nguồn mở được phát triển bởi Facebook để&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://lauhnguyen.github.io/Blog/media/posts/9/feature.jpg" class="type:primaryImage" alt="" /></p>
+                <main>
+<article class="post-content">
+<h2> </h2>
+<h3>1. Giới thiệu về React</h3>
+<p>React là một thư viện JavaScript mã nguồn mở được phát triển bởi Facebook để xây dựng giao diện người dùng. Nó cho phép tạo ra các ứng dụng web động và hiệu quả với ít code hơn.</p>
+<h3>2. Cài đặt và Tạo Dự án React</h3>
+<p>Sử dụng Create React App để bắt đầu nhanh chóng:</p>
+<pre><code>
+npx create-react-app my-react-app
+cd my-react-app
+npm start
+            </code></pre>
+<h3>3. Components trong React</h3>
+<p>React sử dụng khái niệm component để tổ chức UI:</p>
+<pre><code>
+import React from 'react';
+
+function Welcome(props) {
+  return</code></pre>
+<h1>Hello, {props.name}</h1>
+<pre><code>;
+}
+
+function App() {
+  return (</code></pre>
+<div> </div>
+<pre><code>
+  );
+}
+
+export default App;
+            </code></pre>
+<h3>4. State và Props</h3>
+<p>State là dữ liệu private của component, trong khi props là dữ liệu được truyền từ component cha:</p>
+<pre><code>
+import React, { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (</code></pre>
+<div>
+<p>You clicked {count} times</p>
+<button> setCount(count + 1)}&gt; Click me </button></div>
+<pre><code>
+  );
+}
+            </code></pre>
+<h3>5. Lifecycle Methods (với Class Components)</h3>
+<p>Class components có các phương thức lifecycle như componentDidMount, componentDidUpdate, và componentWillUnmount:</p>
+<pre><code>
+class Clock extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {date: new Date()};
+  }
+
+  componentDidMount() {
+    this.timerID = setInterval(
+      () =&gt; this.tick(),
+      1000
+    );
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+
+  tick() {
+    this.setState({
+      date: new Date()
+    });
+  }
+
+  render() {
+    return (</code></pre>
+<div>
+<h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+</div>
+<pre><code>
+    );
+  }
+}
+            </code></pre>
+<h3>6. Hooks (với Function Components)</h3>
+<p>Hooks cho phép sử dụng state và các tính năng React khác mà không cần viết class:</p>
+<pre><code>
+import React, { useState, useEffect } from 'react';
+
+function Example() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() =&gt; {
+    document.title = `You clicked ${count} times`;
+  });
+
+  return (</code></pre>
+<div>
+<p>You clicked {count} times</p>
+<button> setCount(count + 1)}&gt; Click me </button></div>
+<pre><code>
+  );
+}
+            </code></pre>
+<h3>7. Handling Events</h3>
+<p>React có cú pháp riêng để xử lý sự kiện:</p>
+<pre><code>
+function ActionLink() {
+  function handleClick(e) {
+    e.preventDefault();
+    console.log('The link was clicked.');
+  }
+
+  return (
+    <a href="#" onclick="{handleClick}">
+      Click me
+    </a>
+  );
+}
+            </code></pre>
+<h3>8. Conditional Rendering</h3>
+<p>React cho phép render có điều kiện dựa trên state của ứng dụng:</p>
+<pre><code>
+function Greeting(props) {
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
+    return ;
+  }
+  return ;
+}
+            </code></pre>
+<h3>Kết luận</h3>
+<p>React.js là một công cụ mạnh mẽ để xây dựng giao diện người dùng hiện đại và tương tác. Với khái niệm component, virtual DOM, và hệ sinh thái phong phú, React đã trở thành một trong những lựa chọn hàng đầu cho phát triển frontend.</p>
+</article>
+</main>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Lập trình đa luồng trong Java</title>
+        <author>
+            <name>hoangnguyen</name>
+        </author>
+        <link href="https://lauhnguyen.github.io/Blog/lap-trinh-da-luong-trong-java.html"/>
+        <id>https://lauhnguyen.github.io/Blog/lap-trinh-da-luong-trong-java.html</id>
+        <media:content url="https://lauhnguyen.github.io/Blog/media/posts/8/feature.jpg" medium="image" />
+            <category term="Bài Viết"/>
+
+        <updated>2024-12-26T23:15:00+07:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://lauhnguyen.github.io/Blog/media/posts/8/feature.jpg" alt="" />
+                    1. Giới thiệu về đa luồng Đa luồng là khả năng một chương trình thực hiện nhiều tác vụ cùng&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://lauhnguyen.github.io/Blog/media/posts/8/feature.jpg" class="type:primaryImage" alt="" /></p>
+                <article class="post-content">
+<h2> </h2>
+<h3>1. Giới thiệu về đa luồng</h3>
+<p>Đa luồng là khả năng một chương trình thực hiện nhiều tác vụ cùng một lúc. Trong Java, đa luồng cho phép tối ưu hóa hiệu suất và tận dụng tốt hơn tài nguyên hệ thống.</p>
+<h3>2. Tạo và chạy một Thread</h3>
+<p>Có hai cách chính để tạo thread trong Java:</p>
+<h4>a. Kế thừa từ lớp Thread</h4>
+<pre><code>
+public class MyThread extends Thread {
+    public void run() {
+        System.out.println("Thread đang chạy");
+    }
+}
+
+// Sử dụng
+MyThread thread = new MyThread();
+thread.start();
+            </code></pre>
+<h4>b. Implement interface Runnable</h4>
+<pre><code>
+public class MyRunnable implements Runnable {
+    public void run() {
+        System.out.println("Thread đang chạy");
+    }
+}
+
+// Sử dụng
+Thread thread = new Thread(new MyRunnable());
+thread.start();
+            </code></pre>
+<h3>3. Synchronization</h3>
+<p>Synchronization giúp đảm bảo rằng chỉ một thread có thể truy cập vào một phần code tại một thời điểm:</p>
+<pre><code>
+public synchronized void synchronizedMethod() {
+    // Code được đồng bộ hóa
+}
+
+// Hoặc
+public void method() {
+    synchronized(this) {
+        // Khối code được đồng bộ hóa
+    }
+}
+            </code></pre>
+<h3>4. Thread States</h3>
+<p>Một thread trong Java có thể ở một trong các trạng thái sau:</p>
+<ul>
+<li>New</li>
+<li>Runnable</li>
+<li>Blocked</li>
+<li>Waiting</li>
+<li>Timed Waiting</li>
+<li>Terminated</li>
+</ul>
+<h3>5. Thread Pool</h3>
+<p>Thread Pool là một kỹ thuật quản lý thread hiệu quả:</p>
+<pre><code>
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+ExecutorService executor = Executors.newFixedThreadPool(5);
+for (int i = 0; i &lt; 10; i++) {
+    Runnable worker = new WorkerThread("" + i);
+    executor.execute(worker);
+}
+executor.shutdown();
+            </code></pre>
+<h3>6. Deadlock</h3>
+<p>Deadlock xảy ra khi hai hoặc nhiều thread chờ đợi lẫn nhau vô hạn. Ví dụ:</p>
+<pre><code>
+public class DeadlockExample {
+    public static void main(String[] args) {
+        final String resource1 = "resource1";
+        final String resource2 = "resource2";
+        
+        Thread t1 = new Thread(() -&gt; {
+            synchronized (resource1) {
+                System.out.println("Thread 1: locked resource 1");
+                try { Thread.sleep(100);} catch (Exception e) {}
+                synchronized (resource2) {
+                    System.out.println("Thread 1: locked resource 2");
+                }
+            }
+        });
+        
+        Thread t2 = new Thread(() -&gt; {
+            synchronized (resource2) {
+                System.out.println("Thread 2: locked resource 2");
+                try { Thread.sleep(100);} catch (Exception e) {}
+                synchronized (resource1) {
+                    System.out.println("Thread 2: locked resource 1");
+                }
+            }
+        });
+        
+        t1.start();
+        t2.start();
+    }
+}
+            </code></pre>
+<h3>7. Concurrent Collections</h3>
+<p>Java cung cấp các collection thread-safe như ConcurrentHashMap, CopyOnWriteArrayList:</p>
+<pre><code>
+import java.util.concurrent.ConcurrentHashMap;
+
+ConcurrentHashMap&lt;String, Integer&gt; map = new ConcurrentHashMap&lt;&gt;();
+map.put("key", 1);
+Integer value = map.get("key");
+            </code></pre>
+<h3>Kết luận</h3>
+<p>Lập trình đa luồng trong Java là một kỹ năng quan trọng giúp tối ưu hóa hiệu suất ứng dụng. Tuy nhiên, nó cũng đi kèm với những thách thức như deadlock và race condition. Việc hiểu và áp dụng đúng các kỹ thuật đa luồng sẽ giúp bạn phát triển các ứng dụng Java mạnh mẽ và hiệu quả hơn.</p>
+</article>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>ES6 và những tính năng mới trong JavaScript</title>
+        <author>
+            <name>hoangnguyen</name>
+        </author>
+        <link href="https://lauhnguyen.github.io/Blog/es6-va-nhung-tinh-nang-moi-trong-javascript.html"/>
+        <id>https://lauhnguyen.github.io/Blog/es6-va-nhung-tinh-nang-moi-trong-javascript.html</id>
+        <media:content url="https://lauhnguyen.github.io/Blog/media/posts/7/feature.jpg" medium="image" />
+            <category term="Bài Viết"/>
+
+        <updated>2024-12-26T23:14:58+07:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://lauhnguyen.github.io/Blog/media/posts/7/feature.jpg" alt="" />
+                    1. Giới thiệu về ES6 ECMAScript 6 (ES6), còn được gọi là ECMAScript 2015, là một bản cập nhật lớn&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://lauhnguyen.github.io/Blog/media/posts/7/feature.jpg" class="type:primaryImage" alt="" /></p>
+                <article class="post-content">
+<h2> </h2>
+<h3>1. Giới thiệu về ES6</h3>
+<p>ECMAScript 6 (ES6), còn được gọi là ECMAScript 2015, là một bản cập nhật lớn cho JavaScript, giới thiệu nhiều tính năng mới giúp viết code dễ dàng và hiệu quả hơn.</p>
+<h3>2. Let và Const</h3>
+<p>ES6 giới thiệu hai từ khóa mới để khai báo biến: let và const.</p>
+<pre><code>
+// let cho phép khai báo biến có phạm vi block
+let x = 10;
+if (true) {
+    let x = 20; // x này khác với x ở ngoài
+    console.log(x); // 20
+}
+console.log(x); // 10
+
+// const dùng để khai báo hằng số
+const PI = 3.14159;
+// PI = 3; // Sẽ gây ra lỗi
+            </code></pre>
+<h3>3. Arrow Functions</h3>
+<p>Arrow functions cung cấp cú pháp ngắn gọn để viết function expressions:</p>
+<pre><code>
+// ES5
+var sum = function(a, b) {
+    return a + b;
+};
+
+// ES6
+const sum = (a, b) =&gt; a + b;
+
+// Arrow function với nhiều dòng
+const greet = name =&gt; {
+    let greeting = `Hello, ${name}!`;
+    return greeting;
+};
+            </code></pre>
+<h3>4. Template Literals</h3>
+<p>Template literals cho phép nhúng biểu thức vào trong chuỗi:</p>
+<pre><code>
+const name = "Alice";
+const greeting = `Hello, ${name}!`;
+console.log(greeting); // "Hello, Alice!"
+
+const multiLine = `
+    This is a
+    multi-line
+    string.
+`;
+            </code></pre>
+<h3>5. Destructuring</h3>
+<p>Destructuring cho phép trích xuất dữ liệu từ arrays hoặc objects vào các biến riêng biệt:</p>
+<pre><code>
+// Array destructuring
+const [a, b] = [1, 2];
+console.log(a); // 1
+console.log(b); // 2
+
+// Object destructuring
+const {firstName, lastName} = {firstName: "John", lastName: "Doe"};
+console.log(firstName); // "John"
+console.log(lastName);  // "Doe"
+            </code></pre>
+<h3>6. Default Parameters</h3>
+<p>ES6 cho phép set giá trị mặc định cho tham số của hàm:</p>
+<pre><code>
+function greet(name = "Guest") {
+    console.log(`Hello, ${name}!`);
+}
+
+greet(); // "Hello, Guest!"
+greet("Alice"); // "Hello, Alice!"
+            </code></pre>
+<h3>7. Rest và Spread Operators</h3>
+<p>Rest operator (...) cho phép biểu diễn một số lượng đối số không xác định dưới dạng một mảng:</p>
+<pre><code>
+function sum(...numbers) {
+    return numbers.reduce((total, num) =&gt; total + num, 0);
+}
+
+console.log(sum(1, 2, 3, 4)); // 10
+            </code></pre>
+<p>Spread operator (...) cho phép "trải" một mảng thành các phần tử riêng lẻ:</p>
+<pre><code>
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1, 4, 5];
+console.log(arr2); // [1, 2, 3, 4, 5]
+            </code></pre>
+<h3>8. Classes</h3>
+<p>ES6 giới thiệu cú pháp class, giúp việc tạo và sử dụng đối tượng dễ dàng hơn:</p>
+<pre><code>
+class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+
+    speak() {
+        console.log(`${this.name} makes a sound.`);
+    }
+}
+
+class Dog extends Animal {
+    speak() {
+        console.log(`${this.name} barks.`);
+    }
+}
+
+const dog = new Dog('Rex');
+dog.speak(); // "Rex barks."
+            </code></pre>
+<h3>9. Promises</h3>
+<p>Promises cung cấp một cách tốt hơn để xử lý các hoạt động bất đồng bộ:</p>
+<pre><code>
+const myPromise = new Promise((resolve, reject) =&gt; {
+    setTimeout(() =&gt; {
+        resolve("Success!");
+    }, 1000);
+});
+
+myPromise.then(result =&gt; {
+    console.log(result); // "Success!"
+}).catch(error =&gt; {
+    console.log(error);
+});
+            </code></pre>
+<h3>Kết luận</h3>
+<p>ES6 đã mang lại nhiều cải tiến đáng kể cho JavaScript, giúp code trở nên sạch sẽ, dễ đọc và dễ bảo trì hơn. Việc nắm vững các tính năng này sẽ giúp bạn trở thành một lập trình viên JavaScript hiệu quả hơn.</p>
+</article>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Xử lý ngoại lệ trong Java: Best Practices</title>
+        <author>
+            <name>hoangnguyen</name>
+        </author>
+        <link href="https://lauhnguyen.github.io/Blog/xu-ly-ngoai-le-trong-java-best-practices.html"/>
+        <id>https://lauhnguyen.github.io/Blog/xu-ly-ngoai-le-trong-java-best-practices.html</id>
+        <media:content url="https://lauhnguyen.github.io/Blog/media/posts/6/feature.jpg" medium="image" />
+            <category term="Bài Viết"/>
+
+        <updated>2024-12-26T23:14:58+07:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://lauhnguyen.github.io/Blog/media/posts/6/feature.jpg" alt="" />
+                    1. Giới thiệu về xử lý ngoại lệ Xử lý ngoại lệ là một phần quan trọng trong lập trình&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://lauhnguyen.github.io/Blog/media/posts/6/feature.jpg" class="type:primaryImage" alt="" /></p>
+                <main>
+<article class="post-content">
+<h2> </h2>
+<h3>1. Giới thiệu về xử lý ngoại lệ</h3>
+<p>Xử lý ngoại lệ là một phần quan trọng trong lập trình Java, giúp quản lý các lỗi và tình huống bất thường một cách hiệu quả.</p>
+<h3>2. Sử dụng try-catch-finally</h3>
+<p>Cấu trúc try-catch-finally là nền tảng của xử lý ngoại lệ trong Java:</p>
+<pre><code>
+try {
+    // Code có thể gây ra ngoại lệ
+    int result = 10 / 0;
+} catch (ArithmeticException e) {
+    // Xử lý ngoại lệ
+    System.out.println("Lỗi: " + e.getMessage());
+} finally {
+    // Code luôn được thực thi, bất kể có ngoại lệ hay không
+    System.out.println("Đã hoàn thành xử lý");
+}
+            </code></pre>
+<h3>3. Sử dụng nhiều khối catch</h3>
+<p>Khi có nhiều loại ngoại lệ có thể xảy ra, sử dụng nhiều khối catch:</p>
+<pre><code>
+try {
+    // Code có thể gây ra nhiều loại ngoại lệ
+    int[] arr = new int[5];
+    arr[10] = 50;
+} catch (ArrayIndexOutOfBoundsException e) {
+    System.out.println("Lỗi truy cập mảng: " + e.getMessage());
+} catch (Exception e) {
+    System.out.println("Lỗi chung: " + e.getMessage());
+}
+            </code></pre>
+<h3>4. Tạo và ném ngoại lệ tùy chỉnh</h3>
+<p>Tạo ngoại lệ tùy chỉnh khi cần xử lý các tình huống đặc biệt:</p>
+<pre><code>
+public class CustomException extends Exception {
+    public CustomException(String message) {
+        super(message);
+    }
+}
+
+// Sử dụng
+if (someCondition) {
+    throw new CustomException("Đã xảy ra lỗi tùy chỉnh");
+}
+            </code></pre>
+<h3>5. Sử dụng try-with-resources</h3>
+<p>Đối với các tài nguyên cần đóng (như file, database connections), sử dụng try-with-resources:</p>
+<pre><code>
+try (FileInputStream fis = new FileInputStream("file.txt")) {
+    // Xử lý file
+} catch (IOException e) {
+    System.out.println("Lỗi đọc file: " + e.getMessage());
+}
+            </code></pre>
+<h3>6. Ghi log thay vì in ra console</h3>
+<p>Trong môi trường sản phẩm, nên sử dụng logging framework thay vì in ra console:</p>
+<pre><code>
+import java.util.logging.Logger;
+
+private static final Logger logger = Logger.getLogger(MyClass.class.getName());
+
+try {
+    // Code có thể gây ra ngoại lệ
+} catch (Exception e) {
+    logger.severe("Đã xảy ra lỗi: " + e.getMessage());
+}
+            </code></pre>
+<h3>7. Không bỏ qua ngoại lệ</h3>
+<p>Tránh bỏ qua ngoại lệ bằng cách để trống khối catch:</p>
+<pre><code>
+try {
+    // Code có thể gây ra ngoại lệ
+} catch (Exception e) {
+    // KHÔNG LÀM NHƯ NÀY
+}
+
+// Thay vào đó, ít nhất hãy ghi log
+try {
+    // Code có thể gây ra ngoại lệ
+} catch (Exception e) {
+    logger.error("Đã xảy ra lỗi", e);
+}
+            </code></pre>
+<h3>8. Xử lý ngoại lệ ở mức độ phù hợp</h3>
+<p>Xử lý ngoại lệ ở mức độ có đủ thông tin để xử lý một cách có ý nghĩa:</p>
+<pre><code>
+public void processFile(String fileName) throws IOException {
+    try {
+        // Xử lý file
+    } catch (FileNotFoundException e) {
+        System.out.println("File không tồn tại: " + fileName);
+        throw e; // Ném lại ngoại lệ để lớp gọi có thể xử lý tiếp
+    }
+}
+            </code></pre>
+<h3>Kết luận</h3>
+<p>Xử lý ngoại lệ hiệu quả là một kỹ năng quan trọng trong lập trình Java. Bằng cách tuân thủ các best practices này, bạn có thể tạo ra code mạnh mẽ hơn, dễ bảo trì hơn và ít lỗi hơn.</p>
+</article>
+</main>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Node.js: Xây dựng ứng dụng server-side với JavaScript</title>
+        <author>
+            <name>hoangnguyen</name>
+        </author>
+        <link href="https://lauhnguyen.github.io/Blog/nodejs-xay-dung-ung-dung-server-side-voi-javascript.html"/>
+        <id>https://lauhnguyen.github.io/Blog/nodejs-xay-dung-ung-dung-server-side-voi-javascript.html</id>
+        <media:content url="https://lauhnguyen.github.io/Blog/media/posts/5/feature.jpg" medium="image" />
+            <category term="Bài Viết"/>
+
+        <updated>2024-12-26T23:14:53+07:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://lauhnguyen.github.io/Blog/media/posts/5/feature.jpg" alt="" />
+                    1. Giới thiệu về Node.js Node.js là một môi trường runtime JavaScript được xây dựng trên Chrome's V8 JavaScript engine.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://lauhnguyen.github.io/Blog/media/posts/5/feature.jpg" class="type:primaryImage" alt="" /></p>
+                <main>
+<article class="post-content">
+<h2> </h2>
+<h3>1. Giới thiệu về Node.js</h3>
+<p>Node.js là một môi trường runtime JavaScript được xây dựng trên Chrome's V8 JavaScript engine. Nó cho phép bạn chạy JavaScript ở phía server, mở ra khả năng xây dựng ứng dụng web full-stack chỉ với JavaScript.</p>
+<h3>2. Cài đặt Node.js</h3>
+<p>Truy cập <a href="https://nodejs.org">nodejs.org</a> và tải phiên bản phù hợp với hệ điều hành của bạn. Sau khi cài đặt, kiểm tra bằng lệnh:</p>
+<pre><code>
+node --version
+npm --version
+            </code></pre>
+<h3>3. Tạo một ứng dụng Node.js đơn giản</h3>
+<p>Tạo file app.js với nội dung sau:</p>
+<pre><code>
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) =&gt; {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World\n');
+});
+
+server.listen(port, hostname, () =&gt; {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+            </code></pre>
+<p>Chạy ứng dụng bằng lệnh: <code>node app.js</code></p>
+<h3>4. NPM (Node Package Manager)</h3>
+<p>NPM là công cụ quản lý package cho Node.js. Để khởi tạo một dự án mới:</p>
+<pre><code>
+npm init -y
+            </code></pre>
+<p>Để cài đặt package:</p>
+<pre><code>
+npm install express
+            </code></pre>
+<h3>5. Express.js Framework</h3>
+<p>Express là một web application framework phổ biến cho Node.js:</p>
+<pre><code>
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) =&gt; {
+  res.send('Hello World!');
+});
+
+app.listen(port, () =&gt; {
+  console.log(`Example app listening at http://localhost:${port}`);
+});
+            </code></pre>
+<h3>6. Routing trong Express</h3>
+<p>Express cho phép định nghĩa các route một cách dễ dàng:</p>
+<pre><code>
+app.get('/about', (req, res) =&gt; {
+  res.send('About page');
+});
+
+app.post('/api/users', (req, res) =&gt; {
+  // Xử lý tạo user mới
+  res.json({ message: 'User created' });
+});
+            </code></pre>
+<h3>7. Middleware</h3>
+<p>Middleware là các hàm có quyền truy cập vào object request, object response, và hàm next trong chu trình request-response của ứng dụng:</p>
+<pre><code>
+app.use((req, res, next) =&gt; {
+  console.log('Time:', Date.now());
+  next();
+});
+            </code></pre>
+<h3>8. Kết nối với Database</h3>
+<p>Node.js có thể kết nối với nhiều loại database. Ví dụ với MongoDB sử dụng Mongoose:</p>
+<pre><code>
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/myapp', {useNewUrlParser: true, useUnifiedTopology: true});
+
+const Cat = mongoose.model('Cat', { name: String });
+
+const kitty = new Cat({ name: 'Zildjian' });
+kitty.save().then(() =&gt; console.log('meow'));
+            </code></pre>
+<h3>9. Asynchronous Programming</h3>
+<p>Node.js sử dụng mô hình non-blocking I/O, cho phép xử lý bất đồng bộ hiệu quả:</p>
+<pre><code>
+const fs = require('fs');
+
+fs.readFile('file.txt', 'utf8', (err, data) =&gt; {
+  if (err) throw err;
+  console.log(data);
+});
+
+// Hoặc sử dụng Promises
+const fsPromises = require('fs').promises;
+
+async function readFile() {
+  try {
+    const data = await fsPromises.readFile('file.txt', 'utf8');
+    console.log(data);
+  } catch (err) {
+    console.error('Error reading file:', err);
+  }
+}
+
+readFile();
+            </code></pre>
+<h3>10. Deployment</h3>
+<p>Node.js applications có thể được triển khai trên nhiều nền tảng như Heroku, DigitalOcean, AWS, etc. Ví dụ với Heroku:</p>
+<pre><code>
+// Trong package.json
+"scripts": {
+  "start": "node app.js"
+}
+
+// Procfile
+web: npm start
+            </code></pre>
+<h3>Kết luận</h3>
+<p>Node.js mở ra một thế giới mới cho việc phát triển ứng dụng server-side bằng JavaScript. Với hiệu suất cao, hệ sinh thái package phong phú, và khả năng xử lý bất đồng bộ mạnh mẽ, Node.js là một lựa chọn tuyệt vời cho việc xây dựng các ứng dụng web hiện đại và có khả năng mở rộng.</p>
+</article>
+</main>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Giới thiệu về Java: Ngôn ngữ lập trình hướng đối tượng</title>
+        <author>
+            <name>hoangnguyen</name>
+        </author>
+        <link href="https://lauhnguyen.github.io/Blog/gioi-thieu-ve-java-ngon-ngu-lap-trinh-huong-doi-tuong.html"/>
+        <id>https://lauhnguyen.github.io/Blog/gioi-thieu-ve-java-ngon-ngu-lap-trinh-huong-doi-tuong.html</id>
+        <media:content url="https://lauhnguyen.github.io/Blog/media/posts/4/feature.jpg" medium="image" />
+            <category term="Bài Viết"/>
+
+        <updated>2024-12-26T23:12:41+07:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://lauhnguyen.github.io/Blog/media/posts/4/feature.jpg" alt="" />
+                    Ngôn ngữ lập trình phổ biến nhất trên thế giới, được sử dụng rộng rãi trong phát triển phần mềm&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://lauhnguyen.github.io/Blog/media/posts/4/feature.jpg" class="type:primaryImage" alt="" /></p>
+                <header></header><main>
+<article class="post-content">
+<p>Ngôn ngữ lập trình phổ biến nhất trên thế giới, được sử dụng rộng rãi trong phát triển phần mềm doanh nghiệp, ứng dụng Android, và nhiều lĩnh vực khác. Trong bài viết này, chúng ta sẽ tìm hiểu về các đặc điểm cơ bản của Java và lý do tại sao nó lại được ưa chuộng đến vậy.</p>
+<h3>1. Lịch sử của Java</h3>
+<p>Java được phát triển bởi James Gosling và các đồng nghiệp tại Sun Microsystems vào đầu những năm 1990. Ban đầu, nó được thiết kế cho các thiết bị điện tử gia dụng, nhưng sau đó đã phát triển thành một ngôn ngữ lập trình đa năng.</p>
+<h3>2. Đặc điểm chính của Java</h3>
+<ul>
+<li><strong>Hướng đối tượng:</strong> Java là một ngôn ngữ lập trình hướng đối tượng, cho phép tổ chức code thành các đối tượng có thuộc tính và phương thức.</li>
+<li><strong>Độc lập nền tảng:</strong> Với slogan "Write Once, Run Anywhere", Java cho phép chạy trên nhiều nền tảng khác nhau mà không cần biên dịch lại.</li>
+<li><strong>Bảo mật:</strong> Java được thiết kế với nhiều tính năng bảo mật tích hợp, giúp phát triển các ứng dụng an toàn.</li>
+<li><strong>Mạnh mẽ:</strong> Java có cơ chế quản lý bộ nhớ tự động và xử lý ngoại lệ mạnh mẽ.</li>
+</ul>
+<h3>3. Ứng dụng của Java</h3>
+<p>Java được sử dụng rộng rãi trong nhiều lĩnh vực:</p>
+<ul>
+<li>Phát triển ứng dụng doanh nghiệp</li>
+<li>Phát triển ứng dụng Android</li>
+<li>Phát triển ứng dụng web (với Java EE)</li>
+<li>Phát triển phần mềm nhúng</li>
+<li>Big Data và phân tích dữ liệu</li>
+</ul>
+<h3>Kết luận</h3>
+<p>Java là một ngôn ngữ lập trình mạnh mẽ và linh hoạt, phù hợp cho nhiều loại dự án khác nhau. Với cộng đồng lớn và hệ sinh thái phong phú, Java tiếp tục là một kỹ năng quan trọng cho các lập trình viên trong thời đại số hóa hiện nay.</p>
+</article>
+</main>
+            ]]>
+        </content>
+    </entry>
 </feed>
